@@ -1,0 +1,61 @@
+@import './function';
+
+@media screen and(min-width:1440px) {
+  body {
+    main {
+      background: url('../images/bg-curve-desktop.svg') no-repeat;
+      background-size: contain;
+      background-position: 0 36.2rem;
+      .hero {
+        &__img {
+          width: rem(600);
+        }
+        &__header {
+          font-size: 2.5rem;
+        }
+        &__text {
+          font-size: 1.1rem;
+          padding-right: rem(60);
+        }
+        &__cta {
+          padding-right: rem(140);
+        }
+      }
+      .productive {
+        &__img {
+          width: rem(600);
+        }
+        &__header {
+          font-size: 2.3rem;
+        }
+        &__text {
+          padding-right: rem(200);
+          font-size: 1.1rem;
+        }
+        .testimonial {
+          &__container {
+            width: rem(400);
+          }
+        }
+      }
+    }
+    .card {
+      .early-access-card {
+        padding: rem(70);
+        &-content {
+          margin-right: rem(100);
+        }
+      }
+    }
+    footer {
+      .footer__container {
+        .footer__content {
+          .footer__nav__one {
+            margin-right: rem(200);
+          }
+        }
+      }
+    }
+    //body ends
+  }
+}

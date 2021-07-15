@@ -1,0 +1,39 @@
+@import './variables';
+@import './colors';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-open-sans;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $desaturateBlue;
+  &:hover {
+    color: $drkBlue;
+  }
+}

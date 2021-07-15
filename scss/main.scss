@@ -1,0 +1,263 @@
+@import './colors';
+@import './globals';
+@import './variables';
+@import './tablet';
+@import './desktop';
+@import './function';
+
+// mobile-design
+
+/*====
+Header
+======*/
+
+.navbar {
+  width: 100%;
+  padding: rem(20) rem(16);
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-img {
+      width: rem(100);
+    }
+    .features,
+    .team {
+      margin-right: rem(15);
+    }
+  }
+}
+/*====
+global btn
+======*/
+
+/*====
+Main
+======*/
+main {
+  background: url('../images/bg-curve-mobile.svg') no-repeat;
+  background-size: contain;
+  background-position: 0 61.8rem;
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: rem(100) rem(24);
+    &__img {
+      width: rem(400);
+      margin-bottom: rem(32);
+    }
+    &__header {
+      padding: 0 rem(15);
+      font-size: 2rem;
+    }
+    &__text {
+      padding: 0 rem(15);
+      margin: rem(45) 0;
+      font-size: 1.2rem;
+      color: $drkBlue;
+    }
+    &__input,
+    .btn {
+      display: block;
+      width: 100%;
+      margin: auto;
+      padding: rem(15);
+      border-radius: 3px;
+    }
+    &__input {
+      margin-bottom: rem(15);
+      border: 1px solid $desaturateBlue;
+      &::placeholder {
+        font-family: $font-raleway;
+        position: relative;
+        left: 20px;
+      }
+    }
+    .btn {
+      border: none;
+      background: $brightBlue;
+      color: #fff;
+      margin-bottom: rem(90);
+      font-family: $font-raleway;
+      font-weight: 700;
+      cursor: pointer;
+      &:hover {
+        background: $drkBlueBtn;
+      }
+    }
+  }
+  .productive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: $ltgrayishBlue;
+    &__img {
+      width: rem(400);
+      margin: rem(100) 0;
+    }
+    &__header {
+      font-family: $font-raleway;
+    }
+    &__text {
+      text-align: left;
+      padding: 0 rem(55) 0 rem(30);
+      margin: rem(30) 0;
+      color: $drkBlueOp;
+    }
+    &__link {
+      display: inline-block;
+      border-bottom: 1px solid $moderateCyan;
+      .fylo {
+        &__text {
+          display: inline-block;
+          color: $moderateCyan;
+          margin-bottom: rem(8);
+        }
+        .arrow {
+          position: relative;
+          top: 3px;
+        }
+      }
+      &:hover {
+        border-bottom: 1px solid tomato;
+      }
+    }
+    .testimonial {
+      &__container {
+        background: #fff;
+        padding: rem(25);
+        margin: rem(50);
+        text-align: left;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px $desaturateBlueOp;
+        .quote {
+          width: rem(20);
+        }
+      }
+      &__text {
+        line-height: 1.7;
+      }
+      &__profile {
+        display: flex;
+        align-items: center;
+        .avatar {
+          width: rem(60);
+          border-radius: 50%;
+          margin-right: rem(15);
+        }
+        .designation {
+          font-size: 0.75rem;
+          color: $drkBlue;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  background: $desaturateBlue;
+  color: white;
+  .early-access-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: rem(50) rem(50);
+    &__text {
+      line-height: 1.7;
+    }
+    .input,
+    .btn {
+      display: block;
+      width: 100%;
+      margin: auto;
+      padding: rem(15);
+      border-radius: 3px;
+    }
+    .input {
+      margin-bottom: rem(15);
+      border: 1px solid $desaturateBlue;
+      &::placeholder {
+        font-family: $font-raleway;
+        position: relative;
+        left: 20px;
+      }
+    }
+    .btn {
+      border: none;
+      background: $brightBlue;
+      color: #fff;
+      font-family: $font-raleway;
+      font-weight: 700;
+      cursor: pointer;
+      &:hover {
+        background: $drkBlueBtn;
+      }
+    }
+  }
+}
+
+footer {
+  background: $drkBlue;
+  .footer__container {
+    padding: rem(50) rem(60) rem(30) rem(30);
+    color: #fff;
+    .logo {
+      filter: hue-rotate(500deg) brightness(10%) saturate(90%) grayscale(50%)
+        invert(100%);
+      margin-bottom: rem(20);
+    }
+    .footer__telephone,
+    .footer__email {
+      margin: rem(20) 0;
+      .telephone,
+      .email {
+        margin-right: rem(20);
+      }
+    }
+    .footer__nav {
+      &__one,
+      &__two {
+        padding: 0;
+        margin: rem(40) 0;
+        li {
+          margin: rem(10) 0;
+        }
+      }
+      a {
+        color: #fff;
+        margin: rem(10) 0;
+        &:hover {
+          color: $ltGray;
+        }
+      }
+    }
+    .social__icons {
+      text-align: center;
+      i {
+        margin: 0 rem(7);
+        padding: rem(10);
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+      }
+      .github:hover {
+        border: 1px solid #e94f33;
+        color: #e94f33;
+      }
+      .insta:hover {
+        border: 1px solid palevioletred;
+        color: palevioletred;
+      }
+      .twitter:hover {
+        border: 1px solid #379ff3;
+        color: #379ff3;
+      }
+    }
+  }
+}

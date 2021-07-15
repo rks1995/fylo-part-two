@@ -1,0 +1,153 @@
+@import './function';
+
+@media only screen and(min-width: 768px) {
+  body {
+    main {
+      background-position: 0 55rem;
+      .productive {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(80) rem(40);
+        &__img {
+          width: rem(300);
+        }
+        &__content {
+          text-align: left;
+        }
+        &__header {
+          font-size: 2rem;
+        }
+        &__text {
+          padding: 0;
+        }
+      }
+      .testimonial {
+        .testimonial__container {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    footer {
+      .footer__container {
+        .footer__content {
+          display: flex;
+          justify-content: space-between;
+          .footer__contact {
+            .footer__telephone {
+              margin-top: rem(10);
+            }
+          }
+          .footer__nav {
+            display: flex;
+            &__one {
+              margin: 0;
+              margin-right: rem(70);
+            }
+            &__two {
+              margin: 0;
+            }
+          }
+        }
+        .social__icons {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:1024px) {
+  body {
+    .navbar {
+      padding: rem(50);
+    }
+    main {
+      background-position: 0 25rem;
+      .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: rem(50) rem(50) rem(160);
+        &__content {
+          padding-bottom: rem(50);
+          padding-right: rem(100);
+        }
+        &__header {
+          padding: 0;
+          font-size: 1.5rem;
+        }
+        &__text {
+          padding: 0;
+          font-size: 0.9rem;
+          margin: rem(25) 0;
+        }
+        &__cta {
+          display: flex;
+          .hero__input {
+            margin: 0 rem(10) 0 0;
+            flex: 2;
+          }
+          .btn {
+            margin: 0;
+            flex: 1;
+            padding: rem(10);
+          }
+        }
+      }
+      .productive {
+        padding: rem(50);
+        &__img {
+          width: 400px;
+          margin-top: 0;
+        }
+        &__content {
+          padding-right: rem(80);
+        }
+        &__text {
+          font-size: 0.95rem;
+          margin: rem(20) 0;
+        }
+        &__link {
+          font-size: 0.95rem;
+        }
+        .testimonial {
+          padding-bottom: rem(100);
+          &__container {
+            width: rem(375);
+          }
+        }
+      }
+    }
+    .card {
+      .early-access-card {
+        display: flex;
+        flex-direction: row;
+        &-content {
+          padding-right: rem(50);
+        }
+        .btn {
+          width: 60%;
+          margin: 0;
+        }
+      }
+    }
+    footer {
+      .footer__container {
+        .footer__content {
+          display: flex;
+          justify-content: space-between;
+          .footer__nav {
+            &__one {
+              margin-right: rem(140);
+            }
+          }
+        }
+      }
+    }
+    // body ends
+  }
+}
